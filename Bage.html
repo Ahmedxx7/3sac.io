@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>المواد</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600&family=Noto+Sans+Arabic&display=swap');
+    .subject {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInDown 0.5s ease-out forwards;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+   text-align: right; 
+   background-color: #1c111d;
+  
+}
+h3,h1{
+  color: #eae7e7;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+        .subject {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .subject img {
+            width: 130px;
+            height: 180px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>مواد تالته ثنوي</h1>
+    <div class="subject" onclick="redirectToPage('assets/fzia/Quiz.html')">
+        <img src="img/electricity.png" alt="فيزياء">
+        <h3>فيزياء</h3>
+    </div>
+    <div class="subject" onclick="redirectToPage('/assets/Kemia/Quiz.html')">
+        <img src="img/chemistry.png" alt="كيمياء">
+        <h3>كيمياء</h3>
+    </div>
+    <div class="subject" onclick="redirectToPage('/assets/Geology/Quiz.html')">
+        <img src="img/ge.png" alt="جيولوجياء">
+        <h3>جيولوجياء</h3>
+    </div>
+    <div class="subject" onclick="redirectToPage('assets/English/Quiz.html')">
+        <img src="img/united-kingdom.png" alt="انجليزي">
+        <h3>English</h3>
+    </div>
+    <div class="subject" onclick="redirectToPage('assets/Frinsh/Quiz.html')">
+        <img src="img/france.png" alt="فرنساوي">
+        <h3>French</h3>
+    </div>
+    <div class="subject" onclick="redirectToPage('assets/Arabic/Quiz.html')">
+        <img src="img/ar.png" alt="عربي">
+        <h3>عربي</h3>
+    </div>
+        <div class="subject" onclick="redirectToPage('assets/Ahya/Quiz.html')">
+        <img src="img/ah.png" alt="احياء">
+        <h3>احياء</h3>
+    </div>
+
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

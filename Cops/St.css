@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600&family=Noto+Sans+Arabic&display=swap');
+.subject {
+    display: block;
+    margin: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInDown 0.5s ease-out forwards;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+   text-align: right; 
+}
+p{
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-size: 30px; 
+  text-align: right;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
